@@ -1,0 +1,92 @@
+<element name="vnsl" xlns="http://relaxng.org/ns/structure/0.9">
+    <element name="meta">
+        <element name="title">
+            <text/>
+        </element>
+        <element nemu="author">
+            <text/>
+        </element>
+        <element name="releasedDate">
+            <text/>
+        </element>
+        <element name="copyright">
+            <text/>
+        </element>
+    </element>
+
+    <element name="character">
+        <attribute name="displayName">
+            <text/>
+        </attribute>
+        <optional>
+            <element name="picture">
+                <text/>
+            </element>
+            <element name="familyName">
+                <text/>
+            </element>
+            <element name="firstName">
+                <text/>
+            </element>
+            <element name="birthday">   
+                <text/>
+            </element>
+            <element name="nickName">
+                <text/>
+            </element>
+            <element name="actor">
+                <text/>
+            </element>
+            <element name="drawer">
+                <text/>
+            </element>
+        <optional>
+    </element>
+
+    <element name="scene">
+        <element name="meta">
+            <attribute name="place">
+                <text/>
+            </attribute>
+            <attribute name="date">
+                <text/>
+            </attribute>
+        </element>
+        <element name="bgm">
+            <attribute name="fileName">
+                <text/>
+            </attribute>
+            <optional>
+                <attribute name="fileType">
+                    <text/>
+                </attribute>
+            </optional>
+        </element>
+        <element name="background">
+            <attribute name="fileName">
+                <text/>
+            </attribute>
+            <optional>
+                <attribute name="fileType">
+                    <text/>
+                </attribute>
+            </optional>
+        </element>
+        <element name="text">
+            <attribute name="character">
+                <text/>
+            </attribute>
+            <attribute name="picture">
+                <text/>
+            </attribute>
+            <attribute name="sound">
+                <text/>
+            </attribute>
+            <optional>
+                <attribute name="voice">
+                    <text/>
+                </attribute>
+            <optional>
+        </element>
+    </element>
+</element>

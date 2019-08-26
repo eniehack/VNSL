@@ -1,0 +1,72 @@
+= VNSL-spec
+
+Visual Novel Script Language's specfication by RELAX-NG.
+*VNSL is experimental mode*.
+
+== What is VNSL?
+
+VNSL is visual novel's script language written in XML.
+
+== Namespace
+
+
+
+== Details
+
+=== meta
+** title - Work title
+** author - work author
+** releaseDate - released work date
+
+=== character
+
+define a character
+
+** displayName - character's display name
+** familyName
+** firstName
+** birthday
+** nickName
+** actor - character's actor
+** drawer - character's drawer
+
+=== scene 
+
+define a scene
+
+** bgm
+** background
+** place
+** date
+
+==== text
+
+** character
+** picture
+** sound
+** voice
+
+== example
+
+[source, xml]
+----
+<vnsl>
+    <meta>
+        <title>example story<title>
+        <author>someone<author>
+    </meta>
+    <character displayName="Alice"></character>
+    <scene>
+        <background fileName="" />
+        <line character="Alice" picture="alice.png" sound="">
+            please put text.
+        </line>
+    </scene>
+</vnsl>
+----
+
+== Loadmap
+
+* create `<asset>` tag
+* ver1.0 release
+* to renpy file(`.rpy`) converter
